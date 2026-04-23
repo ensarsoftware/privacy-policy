@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - NDI Screen Capture</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #16202a;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    h1, h2, h3 {
+      color: #0f2740;
+      line-height: 1.25;
+    }
+    h1 { margin-top: 0; }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(15, 39, 64, 0.08);
+      margin-bottom: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid #d8e2ee;
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #eef4fb;
+    }
+    code {
+      background: #eef4fb;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .muted {
+      color: #536273;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p><strong>App:</strong> NDI Screen Capture</p>
+      <p><strong>Developer / Operator:</strong> EnsarSoftware</p>
+      <p><strong>Contact:</strong> <a href="mailto:ensarsoftware@gmail.com">ensarsoftware@gmail.com</a></p>
+      <p><strong>Last updated:</strong> April 23, 2026</p>
+      <p class="muted">
+        This Privacy Policy explains what data NDI Screen Capture accesses, how it is used,
+        how it may be shared, and what choices users have.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Summary</h2>
+      <p>
+        NDI Screen Capture is designed to transmit an Android device screen, and optionally device audio,
+        over a local network to NDI-compatible receivers. The app does not create a user account by default
+        and does not collect contacts, location, SMS, or camera data in the current release package.
+      </p>
+      <p>
+        By default, the app does not upload screen content or audio content to servers controlled by us.
+        However, when a user starts a stream, screen and audio data are transmitted to NDI receivers on the local network.
+        Those receivers may be controlled by third parties and their processing is outside our control.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Permissions we use and why</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission / Access</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>android.permission.RECORD_AUDIO</code></td>
+            <td>
+              Used if the user enables audio capture so audio can be transmitted with the NDI stream.
+            </td>
+          </tr>
+          <tr>
+            <td><code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code></td>
+            <td>
+              Allows the app to continue audio-related streaming functions while running as a foreground service.
+            </td>
+          </tr>
+          <tr>
+            <td><code>android.permission.CAPTURE_VIDEO_OUTPUT</code><br><code>android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION</code></td>
+            <td>
+              Used after explicit user authorization to capture the screen and maintain active streaming as a foreground service.
+            </td>
+          </tr>
+          <tr>
+            <td><code>android.permission.INTERNET</code><br><code>android.permission.ACCESS_NETWORK_STATE</code><br><code>android.permission.ACCESS_WIFI_STATE</code><br><code>android.permission.CHANGE_WIFI_MULTICAST_STATE</code></td>
+            <td>
+              Used to discover NDI receivers on the local network, monitor connection state, and transmit the stream.
+            </td>
+          </tr>
+          <tr>
+            <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+            <td>
+              Used on Android 13 and above to display stream and service status notifications.
+            </td>
+          </tr>
+          <tr>
+            <td><code>android.permission.WAKE_LOCK</code></td>
+            <td>
+              Used to help keep streaming sessions stable when the user expects the stream to remain active.
+            </td>
+          </tr>
+          <tr>
+            <td><code>com.android.vending.BILLING</code></td>
+            <td>
+              Used for Google Play in-app purchases related to the Pro license.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>3. Data the app may access or process</h2>
+      <h3>3.1 Screen content</h3>
+      <p>
+        When the user starts screen sharing, screen content is processed and transmitted to NDI receivers on the local network.
+        This is the core function of the app.
+      </p>
+
+      <h3>3.2 Audio content</h3>
+      <p>
+        If the user enables audio capture, device audio and/or relevant audio input may be processed and transmitted together with the stream.
+      </p>
+
+      <h3>3.3 Network and device information</h3>
+      <p>
+        The app may use local network state, device-related connection details, and user-defined source names
+        in order to discover receivers and establish NDI sessions.
+      </p>
+
+      <h3>3.4 Purchase and entitlement information</h3>
+      <p>
+        For Pro unlocks, the app uses Google Play Billing and may process purchase status, entitlement state,
+        billing responses, and technical purchase tokens required for license verification. We do not receive full card data.
+      </p>
+
+      <h3>3.5 Crash and diagnostics data</h3>
+      <p>
+        If Firebase Crashlytics is enabled in release builds, crash-related technical information may be processed,
+        including app version, device model, operating system version, timestamps, and crash logs.
+      </p>
+
+      <h3>3.6 User-submitted feedback</h3>
+      <p>
+        If the user chooses to send feedback or support requests, the content of the email and any information
+        voluntarily included by the user may be received by us.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. How we use data</h2>
+      <ul>
+        <li>to provide screen sharing over NDI,</li>
+        <li>to provide optional audio streaming,</li>
+        <li>to discover and connect to local NDI receivers,</li>
+        <li>to process Pro license purchases and verification,</li>
+        <li>to diagnose crashes and improve app stability,</li>
+        <li>to respond to support or feedback messages sent by the user.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. How data may be shared</h2>
+      <ul>
+        <li><strong>NDI receivers on the local network:</strong> screen and audio content are transmitted when the user starts streaming.</li>
+        <li><strong>Google Play Billing:</strong> used for Pro purchase and license verification flows.</li>
+        <li><strong>Firebase Crashlytics (Google):</strong> used for technical crash reporting and diagnostics where enabled.</li>
+        <li><strong>User-selected email provider:</strong> used if the user chooses to send feedback or support email.</li>
+        <li><strong>Legal or regulatory authorities:</strong> only where required by applicable law or valid legal process.</li>
+      </ul>
+      <p>We do not sell user data.</p>
+    </div>
+
+    <div class="card">
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li><strong>Screen and audio content:</strong> not stored on servers controlled by us by default; processed and transmitted during active sessions.</li>
+        <li><strong>Crash diagnostics:</strong> may be retained for a reasonable period to investigate issues and improve reliability.</li>
+        <li><strong>Support emails:</strong> may be retained as needed to resolve the request or comply with legal obligations.</li>
+        <li><strong>Purchase records:</strong> may be retained as necessary for entitlement, accounting, security, and legal compliance.</li>
+      </ul>
+      <p>
+        For deletion or access requests regarding data under our control, contact
+        <a href="mailto:ensarsoftware@gmail.com">ensarsoftware@gmail.com</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Security</h2>
+      <p>
+        We use reasonable technical and organizational measures to reduce unauthorized access.
+        However, no method of transmission or storage can be guaranteed to be completely secure.
+      </p>
+      <p>
+        NDI traffic operates on the user's network environment. Users should use trusted networks,
+        especially when transmitting sensitive screen content.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. User choices and rights</h2>
+      <ul>
+        <li>Users can enable or disable audio capture within the app where available.</li>
+        <li>Users can deny or revoke Android permissions in device settings.</li>
+        <li>Users can disable notifications in device settings.</li>
+        <li>Users can uninstall the app at any time.</li>
+        <li>Users may contact us regarding access or deletion requests for data under our control.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>9. Children</h2>
+      <p>
+        This app is not directed to children, and we do not knowingly collect personal data from children.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10. Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The latest update date will be shown at the top of this page.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>11. Contact</h2>
+      <p>
+        Privacy questions, support requests, or deletion requests:
+        <a href="mailto:ensarsoftware@gmail.com">ensarsoftware@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
